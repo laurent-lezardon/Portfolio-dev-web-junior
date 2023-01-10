@@ -100,9 +100,11 @@ section {
   margin-top: -20vh;
 }
 h1,
-h2,
-p {
+h2 {
   font-family: "Permanent Marker", cursive;
+}
+#junior {
+  color: orangered;
 }
 h1 {
   font-size: 7vw;
