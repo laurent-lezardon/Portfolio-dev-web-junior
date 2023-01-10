@@ -1,0 +1,277 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* ============= Style personnalisé =====================*/
+body {
+  background-image: url(./Images/background-coups\ de\ peintures.avif);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.level {
+  font-family: "Permanent Marker", cursive;
+  color: orange;
+  /* font-size: larger; */
+  display: inline-block;
+  width: 50px;
+}
+/* ------------ header ------------------- */
+header {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: rgb(121, 38, 15);
+  transition: 0.2s;
+}
+a:hover {
+  font-weight: bolder;
+  color: rgb(151, 48, 19);
+}
+/* ---------- page d'accueil ------------ */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+}
+.home {
+  margin-top: -20vh;
+}
+h1,
+h2,
+p {
+  font-family: "Permanent Marker", cursive;
+}
+h1 {
+  font-size: 7vw;
+}
+
+h2 {
+  margin-top: 5vh;
+  font-size: 5vw;
+  text-align: end;
+}
+
+/* -------------- autres pages --------------------- */
+.h1-not-home {
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 2vw;
+}
+
+.h2-not-home {
+  font-size: 1vw;
+  text-align: start;
+  margin-block-start: 10px;
+}
+li,
+p {
+  font-family: "Caveat", cursive;
+}
+/* ----------- page realisations ----------------- */
+.project-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px 3vw;
+}
+
+.project-card {
+  background: url(./Images/papier-scotche.png);
+  background-size: cover;
+  width: 510px;
+  height: 680px;
+  overflow: hidden;
+  padding: 90px;
+}
+.project-card a {
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+}
+
+.project-img {
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 2px 3px #ccc;
+}
+.tags {
+  display: inline-block;
+  margin-top: 25px;
+  font-family: "Permanent Marker", cursive;
+  color: orangered;
+}
+.project-github {
+  height: 50px;
+  transition: 0.3s ease-in;
+}
+.project-github:hover {
+  scale: 1.2;
+}
+
+.project-card--right {
+  transform: rotate(2deg);
+}
+.project-card--left {
+  transform: rotate(-1deg);
+}
+
+/* -------------- CV ------------------- */
+
+.cv {
+  position: relative;
+  margin-top: 30px;
+  height: 100vh;
+}
+.photo,
+.cv .project-card,
+.contact-card {
+  position: absolute;
+}
+.cv h2 {
+  color: orangered;
+  font-size: 2vw;
+}
+.photo {
+  left: 10%;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 2px 3px 3px #bbb;
+}
+#contact {
+  top: -20px;
+  left: 30%;
+}
+#oldman {
+  top: 50%;
+  right: 10%;
+}
+.presentation {
+  top: 200px;
+}
+
+.skills {
+  /* top: 350px;
+  left: 30%; */
+  right: 10%;
+}
+.soft-skills {
+  /* right: 10%; */
+  top: 350px;
+  left: 30%;
+}
+
+.contact-card {
+  background: url(./Images/post-it.avif);
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+.contact-card h2 {
+  color: red;
+}
+.contact {
+  margin-top: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+}
+.p-contact {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.contact a {
+  color: red;
+  padding: 0;
+}
+.project-card p {
+  padding-top: 10px;
+  text-indent: 20px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1300px) {
+  .soft-skills {
+    top: 80%;
+    left: 20%;
+  }
+  #oldman {
+    top: 130%;
+    left: 0%;
+  }
+  .skills {
+    top: 30%;
+    left: 40%;
+  }
+  #contact {
+    top: 0px;
+    left: 55%;
+  }
+}
