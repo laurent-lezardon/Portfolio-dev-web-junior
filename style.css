@@ -107,24 +107,24 @@ h2 {
   color: orangered;
 }
 h1 {
-  font-size: 7vw;
+  font-size: clamp(30px, 7vw, 150px);
 }
 
 h2 {
   margin-top: 5vh;
-  font-size: 5vw;
+  font-size: clamp(25px, 5vw, 100px);
   text-align: end;
 }
 
 /* -------------- autres pages --------------------- */
 .h1-not-home {
-  font-size: 5vw;
+  font-size: clamp(25px, 5vw, 100px);
   text-align: center;
   margin-top: 2vw;
 }
 
 .h2-not-home {
-  font-size: 1vw;
+  font-size: clamp(20px, 1vw, 45px);
   text-align: start;
   margin-block-start: 10px;
 }
@@ -194,7 +194,7 @@ p {
 }
 .cv h2 {
   color: orangered;
-  font-size: 2vw;
+  font-size: clamp(20px, 2vw, 45px);
 }
 .photo {
   left: 10%;
@@ -275,5 +275,64 @@ p {
   #contact {
     top: 0px;
     left: 55%;
+  }
+  .project-card {
+    transform: rotate(0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* .cv {
+    display: block;
+    flex-wrap: nowrap;
+  } */
+  .photo,
+  .cv .project-card,
+  .contact-card,
+  .presentation,
+  #contact,
+  #oldman {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: auto;
+    right: auto;
+    width: 100%;
+  }
+  .presentation {
+    top: 0;
+  }
+  .photo {
+    width: fit-content;
+  }
+  .cv .project-card {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-cards {
+    display: block;
+    /* justify-content: space-evenly;
+    flex-wrap: wrap; */
+    padding: 0;
+    /* overflow: hidden; */
+  }
+  .project-card {
+    background-image: none;
+    /* background-color: white; */
+    background-size: cover;
+    width: 100%;
+    margin-top: 20px;
+    /* margin-left: -70px;
+    margin-right: 0px; */
+    /* height: 680px; */
+    /* overflow: hidden; */
+    padding: 5%;
+    height: auto;
+    transform: rotate(0);
+  }
+  .project-github {
+    margin-top: -10px;
   }
 }
