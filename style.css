@@ -208,8 +208,8 @@ p {
   left: 30%;
 }
 #oldman {
-  top: 50%;
-  right: 10%;
+  top: 70%;
+  left: 3%;
 }
 .presentation {
   top: 200px;
@@ -218,12 +218,13 @@ p {
 .skills {
   /* top: 350px;
   left: 30%; */
+  top: -5%;
   right: 10%;
 }
 .soft-skills {
   /* right: 10%; */
-  top: 350px;
-  left: 30%;
+  top: 42%;
+  left: 45%;
 }
 
 .contact-card {
@@ -302,8 +303,16 @@ p {
   .presentation {
     top: 0;
   }
+  .project-card {
+    padding: 80px 15%;
+  }
   .photo {
     width: fit-content;
+  }
+  #contact {
+    max-width: 450px;
+    margin-bottom: 10px;
+    height: 250px;
   }
   .cv .project-card {
     height: auto;
@@ -318,12 +327,17 @@ p {
     padding: 0;
     /* overflow: hidden; */
   }
+
+  .cv .project-card {
+    margin: 0 5px 10px 5px;
+    width: 97%;
+  }
   .project-card {
     background-image: none;
-    /* background-color: white; */
+    background-color: white;
     background-size: cover;
-    width: 100%;
-    margin-top: 20px;
+    width: 97%;
+    margin: 10px 5px;
     /* margin-left: -70px;
     margin-right: 0px; */
     /* height: 680px; */
