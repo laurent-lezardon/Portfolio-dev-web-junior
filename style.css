@@ -115,6 +115,11 @@ h2 {
   font-size: clamp(25px, 5vw, 100px);
   text-align: end;
 }
+em,
+li {
+  font-weight: 600;
+  color: rgb(47, 47, 47);
+}
 
 /* -------------- autres pages --------------------- */
 .h1-not-home {
@@ -142,11 +147,12 @@ p {
 
 .project-card {
   background: url(./Images/papier-scotche.png);
-  background-size: cover;
+  background-size: 160%;
+  background-position: center;
   width: 510px;
   height: 680px;
   overflow: hidden;
-  padding: 90px;
+  padding: 80px 70px;
 }
 .project-card a {
   display: inline-block;
@@ -194,7 +200,7 @@ p {
 }
 .cv h2 {
   color: orangered;
-  font-size: clamp(20px, 2vw, 45px);
+  font-size: clamp(20px, 2vw, 30px);
 }
 .photo {
   left: 10%;
@@ -223,8 +229,8 @@ p {
 }
 .soft-skills {
   /* right: 10%; */
-  top: 42%;
-  left: 45%;
+  top: 57%;
+  left: 35%;
 }
 
 .contact-card {
@@ -262,11 +268,11 @@ p {
 
 @media screen and (max-width: 1300px) {
   .soft-skills {
-    top: 80%;
+    top: 90%;
     left: 20%;
   }
   #oldman {
-    top: 130%;
+    top: 150%;
     left: 0%;
   }
   .skills {
@@ -283,10 +289,6 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
-  /* .cv {
-    display: block;
-    flex-wrap: nowrap;
-  } */
   .photo,
   .cv .project-card,
   .contact-card,
@@ -297,6 +299,7 @@ p {
     top: auto;
     left: auto;
     margin: auto;
+    margin-bottom: 20px;
     right: auto;
     width: 100%;
   }
